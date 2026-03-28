@@ -47,7 +47,7 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 
 ## 🖥️ Simulation Proteus
 
-![Simulation Proteus](assets/simulation_proteus.png)
+![Simulation Proteus](simulation_proteus.png)
 
 *Simulation complète du circuit sur Proteus — pH : 8.64 | Water : 30% | Turbidity : 19 | Water Norm Clean*
 
@@ -73,9 +73,9 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 
 ---
 
-## 💻 Code Arduino
+## 💻 Logique du code
 
-### Seuils & logique
+### Seuils & actions automatiques
 
 | Paramètre | Condition | Action |
 |---|---|---|
@@ -84,7 +84,7 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 | Turbidité | 10 – 30 | Water Norm Clean |
 | Turbidité | > 30 | Water Very Dirty |
 
-### Pins utilisées
+### Pins Arduino
 
 | Pin | Composant | Mode |
 |---|---|---|
@@ -100,11 +100,10 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 ## 🗂️ Structure du projet
 
 ```
-📦 smart-aquarium/
-├── 📁 assets/
-│   └── simulation_proteus.png   # Capture de la simulation Proteus
-├── 📄 aquarium.ino              # Code source Arduino principal
+📦 smart-aquarium-arduino/
+├── 📄 aquarium.ino              # Code source Arduino
 ├── 📄 aquarium.pdsprj           # Fichier simulation Proteus
+├── 📄 simulation_proteus.png    # Capture du circuit simulé
 └── 📄 README.md
 ```
 
@@ -113,8 +112,8 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 ## 🚀 Comment tester
 
 ### Sur Proteus (simulation)
-1. Ouvre le fichier `aquarium.pdsprj` avec Proteus
-2. Lance la simulation (bouton ▶️)
+1. Ouvre `aquarium.pdsprj` avec Proteus
+2. Lance la simulation ▶️
 3. Observe les valeurs sur l'écran LCD simulé
 
 ### Sur Arduino réel
@@ -122,7 +121,7 @@ Les animaux marins nécessitent un environnement sain et stable pour survivre. L
 2. Ouvre `aquarium.ino`
 3. Branche ton Arduino UNO via USB
 4. Sélectionne le bon port COM
-5. Clique sur **Téléverser** ✅
+5. Clique **Téléverser** ✅
 
 ---
 
